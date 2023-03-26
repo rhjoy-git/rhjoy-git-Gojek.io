@@ -1004,6 +1004,152 @@
 }
 
 @media only screen and (max-width: 768px) {
+    /* header start */
+    .logo img {
+        height: 55px;
+    }
+    .contant {
+        padding: 0;
+    }
+    .col {
+        width: auto;
+    }
+    .col p {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .col img {
+        padding: 10px 15px;
+        height: 55px;
+    }
+    .col h2 {
+        font-size: 30px;
+        padding-right: 100px;
+        word-spacing: 2px;
+    }
+    /* header end */
+    /* feature start  */
+    .features-heading h2 {
+        font-size: 30px;
+    }
+    .features-card {
+        padding: 10px 0;
+        margin: 0;
+    }
+    .card {
+        padding: 5px 0px;
+        margin: 0 20px;
+    }
+    .card p {
+        font-size: 13px;
+    }
+    .card h3 {
+        font-size: 18px;
+        margin: 10px 0px 4px;
+    }
+    .bg-green {
+        height: 20px;
+        width: 20px;
+        padding: 13px;
+    }
+    .bg-green .fas {
+        font-size: 20px;
+    }
+    .card:hover {
+        transform: translate(0, -10px);
+    }
+    /* feature end */
+    /* gojek-service start */
+    .gojek-service img {
+        width: 145px;
+    }
+    .go-itmes-head h2 {
+        font-size: 28px;
+    }
+    .go-itmes-head h2 span {
+        font-size: 25px;
+    }
+    .icon {
+        height: 40px;
+        width: 40px;
+    }
+    .icon .fas, .icon .fab {
+        font-size: 19px;
+    }
+    .icon-sec {
+        padding: 3px;
+    }
+    .gojek-service {
+        padding: 40px 0;
+    }
+    /* gojek-service end */
+    /* install gojek start */
+    .install-content {
+        padding: 16px 8px;
+    }
+    .head-cont h3 {
+        font-size: 22px;
+        margin: 0;
+        padding: 2px 0;
+    }
+    .set-con h3 {
+        font-size: 16px;
+    }
+    .set-col-heading img {
+        width: 17px;
+        padding: 2px 2px 2px 0;
+    }
+    /* install gojek end */
+    /* our service sec start  */
+    .our-services-sec {
+        padding: 90px 0;
+    }
+    .our-service-heading h2 {
+        font-size: 30px;
+    }
+    .our-service-heading p {
+        padding: 5px 1px;
+        margin-top: 0px;
+    }
+    .our-services-cards {
+        transform: translate(-50%, 75%);
+    }
+    .service-card {
+        width: 160px;
+        height: 115px;
+        margin: 0px 6px;
+    }
+    .service-card .fas, .service-card .fa {
+        font-size: 42px;
+    }
+    .service-card p {
+        padding: 12px 10px 0 10px;
+        font-size: 16px;
+    }
+    /* our service sec end */
+    /* footer start  */
+    .footer-sec {
+        margin: 80px 0 0;
+    }
+    .footer {
+        padding: 15px 0px 10px;
+    }
+    .f-logo img {
+        width: 115px;
+        margin-left: 0;
+    }
+    .footer-cont {
+        width: auto;
+        padding: 5px;
+    }
+    .footer-cont-header h2 {
+        margin: 16px 0 8px;
+        font-size: 15px;
+    }
+    .foot-bar {
+        padding: 7px;
+    }
+    /* footer end  */
 }
 
 @media only screen and (max-width: 570px) {

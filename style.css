@@ -30,7 +30,7 @@
 .header .toggle-btn{
     display: none;
 }
-.header .toggle-btn svg:not(:root).svg-inline--fa {
+.header .toggle-btn .fa-solid {
     font-size: 25px;
     color: #fff;
     cursor: pointer;
@@ -54,21 +54,25 @@
 
 .network-logo {
     margin-right: 5px;
-    padding: 5px;
-    background: #fff;
+    padding: 6px 4px;
+    background: rgb(255, 255, 255);
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29px;
+    height: 28px;
 }
 
-.network-logo svg:not(:root).svg-inline--fa {
+.network-logo .fa-solid {
     font-size: 13px;
-    width: 19px;
 }
 
 .network-logo:hover {
     color: #fff;
     border: 1px solid #fff;
     background: rgb(1, 117, 1);
-    padding: 4px;
+    padding:2px 4px;
 }
 
 .navbar {
@@ -224,7 +228,9 @@
     justify-content: center;
     align-items: center;
 }
-
+.bg-green .fas{
+    font-size: 40px;
+}
 .card svg:not(:host).svg-inline--fa,
 svg:not(:root).svg-inline--fa {
     font-size: 40px;
@@ -320,9 +326,9 @@ svg:not(:root).svg-inline--fa {
     align-items: center;
 }
 
-.icon svg:not(:host).svg-inline--fa,
-svg:not(:root).svg-inline--fa {
-    font-size: 40px;
+.icon .fas,
+.icon .fab {
+    font-size: 30px;
 }
 
 .go-itmes-head h2 {
@@ -489,7 +495,8 @@ svg:not(:root).svg-inline--fa {
     color: #192226;
 }
 
-.service-card svg:not(:root).svg-inline--fa {
+.service-card .fas,
+.service-card .fa {
     font-size: 70px;
     color: rgb(97, 198, 97);
 }

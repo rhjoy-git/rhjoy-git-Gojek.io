@@ -1,56 +1,76 @@
 /* Common CSS */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.Container{
-    max-width: 1400px;
-    margin: auto;
+
+.Container {
+    padding: 0 50px;
 }
+
 /* home page start */
 /* Background Img */
-.header-section{
-    background: url("image/Banner.png");
+.header-section {
+    background: url("image/Bannerinheader.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-/* header */
-.header{
-    display: flex;
-    padding: 25px 0;
 
+/* header */
+.header {
+    display: flex;
+    padding: 25px 0px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
+
+.header .toggle-btn svg:not(:root).svg-inline--fa {
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
 /* Logo start */
-.logo{
-    width: 30%;
-}
-.logo img{
+.logo img {
     height: 70px;
 }
+
 /* logo end */
 /* nav start */
-.nav-section{
-    width: 60%;
+.nav-section {
     display: flex;
-    justify-content: end;
-    padding: 10px 5px 50px;
+    align-items: center;
+    justify-content: flex-end;
+    right: 0;
+    position: absolute;
+    font-size: 20px;
 }
-.network-logo{
-    margin: auto 5px;
-}
-.network-logo img{
-    width: 22px;
-    padding: 8px;
-    border: none;
+
+.network-logo {
+    margin-right: 5px;
+    padding: 5px;
+    background: #fff;
     border-radius: 50%;
-    background: white;
 }
-.nav{
+
+.network-logo svg:not(:root).svg-inline--fa {
+    font-size: 13px;
+    width: 19px;
 }
-.nav ul{
+
+.network-logo:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: rgb(1, 117, 1);
+    padding: 4px;
+}
+
+.navbar {
     display: flex;
     background: white;
     border: none;
@@ -58,72 +78,80 @@
     text-align: center;
     padding: 0 15px;
 }
-.nav ul li{
+
+.navbar li {
     list-style: none;
     padding: 10px 15px;
     text-align: center;
 }
-.nav ul li a{
+
+.navbar li a {
     color: rgb(1, 101, 1);
-    font-size: 20px;
     text-align: center;
     text-decoration: none;
-    padding: 5px;    
+    padding: 5px;
 }
-.nav ul li:active{
+
+.navbar li a:hover {
     color: black;
 }
-.sign{
-    font-size: 20px;
-    width: 10%;
-    display: flex;
-    padding: 20px 5px;
-}
-.sing-In a{
+
+.login a {
     text-decoration: none;
     color: inherit;
     padding: 0 10px;
-    }
+}
+
 /* nav end  */
 /* contant start */
-.col{
+.col {
     width: 50%;
 }
-.col h2{
+
+.col h2 {
     font-size: 60px;
     color: white;
     text-transform: uppercase;
     margin: 0;
     padding: 10px 0;
 }
-.col p{
+
+.col p {
     font-size: 20px;
     color: white;
     padding: 10px 0;
 }
-.col img{
+
+.col img {
     padding: 25px 15px;
 }
-.contant{
-    padding:50px 0 160px;
+
+.contant {
+    padding: 3rem 0rem 10rem;
 }
+
 /* contant end  */
 /* home page end */
 /* feature section start */
-.features{
+.features {
     padding: 50px 0;
 }
-.features-heading{
+
+.features-heading {
     text-align: center;
 }
-.features-heading h2{
-    font-size: 50px;
-    color: #34454C;;
+
+.features-heading h2 {
+    font-size: 51px;
+    color: #34454C;
+    ;
 }
-.features-heading h2 span{
+
+.features-heading h2 span {
     color: #192226;
 }
-.features-card{
+
+.features-card {
     display: flex;
     text-align: center;
     padding: 50px 0 0;
@@ -131,11 +159,13 @@
     justify-content: center;
 
 }
-.card{
+
+.card {
     margin: 10px 40px;
     padding: 5px 35px;
 }
-.bg-green{
+
+.bg-green {
     margin: auto;
     height: 35px;
     width: 35px;
@@ -148,74 +178,90 @@
     align-items: center;
 }
 
-.card svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
-    font-size: 40px; 
+.card svg:not(:host).svg-inline--fa,
+svg:not(:root).svg-inline--fa {
+    font-size: 40px;
 }
-.card h3{
+
+.card h3 {
     font-size: 25px;
     margin: 20px;
 }
-.card p{
+
+.card p {
     font-size: 20px;
     margin: 0;
 }
 
-.features-cont{
+.features-cont {
     padding: 50px;
 }
-.features-cont img{
+
+.features-cont img {
     display: block;
     margin: auto;
 }
-.card:hover{
+
+.card:hover {
     transition: 0.5s;
-    transform: translate(0,-50px);
+    transform: translate(0, -50px);
 }
-.card:hover h3{
+
+.card:hover h3 {
     color: green;
 }
-.card:hover .bg-green{
+
+.card:hover .bg-green {
     color: white;
     background: green;
     outline-color: green;
 }
+
 /* End Freatures */
 /* Start items */
-.Gojek-service-sec{
+.Gojek-service-sec {
     background: url("image/UseGojek.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 100px;
 }
-.gojek-service{
+
+.gojek-service {
     display: flex;
     padding: 100px 0;
     position: relative;
+    overflow: hidden;
 }
-.col-item{
+
+.col-item {
     width: 50%;
 
 }
-.go-itmes-head{
+
+.go-itmes-head {
     text-align: center;
 }
-.items{
+
+.items {
     display: flex;
     justify-content: center;
 }
-.icon-sec{
+
+.icon-sec {
     padding: 15px;
     text-align: center;
 }
-.icon-sec h4{
+
+.icon-sec h4 {
     color: white;
     text-transform: uppercase;
     font-size: 15px;
     margin: auto;
     padding-top: 5px;
 }
-.icon{
+
+.icon {
     padding: 2.5px;
     height: 75px;
     width: 75px;
@@ -226,53 +272,69 @@
     justify-content: center;
     align-items: center;
 }
-.icon svg:not(:host).svg-inline--fa, svg:not(:root).svg-inline--fa {
+
+.icon svg:not(:host).svg-inline--fa,
+svg:not(:root).svg-inline--fa {
     font-size: 40px;
 }
-.go-itmes-head h2{
+
+.go-itmes-head h2 {
     font-size: 40px;
     color: white;
     font-weight: 500;
 }
-.go-itmes-head span{
+
+.go-itmes-head span {
     font-size: 35px;
     font-weight: 400;
 }
-.phn-img{
+
+.phn-img {
     display: flex;
     margin: auto;
-    
+
 }
-.gojek-service img{
+
+.gojek-service img {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
 /* End items */
 /* Install Start */
-.install-header h2{
+.install-header h2 {
     color: #192226;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
     margin: 0;
 }
-.install-header h2 span{
+
+.install-header h2 span {
     color: #34454C;
 }
-.install-content{
+
+.install-content {
     display: flex;
     padding: 50px 100px;
 }
-.install-col{
+
+.install-col {
     width: 50%;
     padding: 0 20px;
 }
-.head-cont{
+
+.img-div img {
+    width: 100%;
+}
+
+.head-cont {
     text-align: left;
 }
-.head-cont h3{
+
+.head-cont h3 {
     font-size: 30px;
     font-weight: 400;
     color: #3c4f57;
@@ -280,40 +342,48 @@
     padding: 10px 0;
     font-weight: 600;
 }
-.head-cont p{
+
+.head-cont p {
     margin: 0;
     font-size: 20px;
     color: #45565e;
     padding: 10px 0;
 }
-.settings{
+
+.settings {
     padding: 10px 0;
 }
-.set-col{
+
+.set-col {
     padding: 5px 0;
     display: flex;
 }
-.set-con{
+
+.set-con {
     padding: 5px 25px 5px 5px;
 }
-.set-con h3{
+
+.set-con h3 {
     margin: 0;
     font-size: 20px;
     color: #34454C;
 }
-.set-con p{
+
+.set-con p {
     margin: 0;
     font-size: 17px;
     color: #3b4b51;
 
 }
-.set-col-heading img{
+
+.set-col-heading img {
     width: 30px;
     padding: 5px 5px 5px 0;
 }
+
 /* Install End */
 /* Start Our Services  */
-.our-services-sec{
+.our-services-sec {
     padding: 250px 0;
     background: url("Image/serviceImage.png");
     background-position: center;
@@ -321,32 +391,37 @@
     background-size: cover;
     width: 100%;
 }
-.our-services{
+
+.our-services {
     position: relative;
 }
-.our-service-heading{
+
+.our-service-heading {
     text-align: center;
 }
-.our-service-heading h2{
+
+.our-service-heading h2 {
     margin: 0;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
-.our-service-heading p{
+
+.our-service-heading p {
     margin-top: 30px;
     font-size: 18px;
     padding: 5px 250px;
     color: white;
 }
-.our-services-cards{
+
+.our-services-cards {
     display: flex;
     position: absolute;
-    margin-top: 50px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 35%);
+    transform: translate(-50%, 50%);
 }
-.service-card{
+
+.service-card {
     text-align: center;
     margin: 25px;
     border-radius: 5px;
@@ -358,74 +433,87 @@
     box-shadow: 0px 0px 16px 0px #000;
     align-items: center;
 }
-.service-card p{
+
+.service-card p {
     font-weight: 600;
     font-size: 18px;
     text-transform: uppercase;
     padding: 10px;
     color: #192226;
 }
+
 .service-card svg:not(:root).svg-inline--fa {
     font-size: 70px;
     color: rgb(97, 198, 97);
 }
+
 /* End Our Services  */
 /* Start Footer */
-.footer-sec{
+.footer-sec {
     margin: 250px 0 0;
     background: #f7f7f7;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 50px 80px;
 }
-.footer-cont{
+
+.footer-cont {
     width: 25%;
     padding: 10px;
 }
-.footer-cont-header h2{
+
+.footer-cont-header h2 {
     color: #34454C;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 600;
     margin: 30px 0;
 }
-.footer-social-link ul{
+
+.footer-social-link ul {
     margin: 0;
     padding: 0;
 }
-.footer-social-link ul li{
+
+.footer-social-link ul li {
     list-style: none;
     padding: 7px 0;
 }
-.footer-social-link ul li div{
+
+.footer-social-link ul li div {
     display: flex;
 }
-.footer-social-link ul li a{
+
+.footer-social-link ul li a {
     text-decoration: none;
     color: #7e888a;
     font-size: 18px;
     padding: 0 5px;
 }
-.footer-social-link ul li a:hover{
+
+.footer-social-link ul li a:hover {
     color: rgb(39, 216, 45);
 }
-.footer-social-link ul li p{
+
+.footer-social-link ul li p {
     text-decoration: none;
     color: #7e888a;
     font-size: 18px;
     padding: 0 5px;
     margin: 0;
 }
+
 .footer-social-link ul li div svg:not(:root).svg-inline--fa {
     font-size: 20px;
     padding-right: 5px;
     color: rgb(95, 206, 95);
 }
 
-.foot-bar{
+.foot-bar {
     padding-top: 25px;
     padding-bottom: 10px;
     display: flex;
@@ -433,12 +521,192 @@
     align-items: center;
     border-top: 1px solid gray;
 }
-.foot-bar strong{
+
+.foot-bar strong {
     font-size: 20px;
 }
-.foot-bar a{
+
+.foot-bar a {
     text-decoration: none;
     color: rgb(95, 206, 95);
     font-size: 20px;
 }
+
 /* End Footer */
+
+/* Responsive area */
+@media only screen and (max-width: 1300px) {
+    .contant {
+        padding: 2rem 0rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /* header start */
+    .logo img {
+        height: 65px;
+    }
+
+    .nav-section {
+        font-size: 18px;
+    }
+
+    .navbar li {
+        padding: 10px 13px;
+    }
+
+    .col h2 {
+        font-size: 51px;
+    }
+
+    .col p {
+        font-size: 18px;
+    }
+
+    /* header end */
+    /* feature sec start */
+    .features-card {
+        padding: 50px 0 25px;
+    }
+
+    .card {
+        margin: 10px 25px;
+        padding: 5px 25px;
+    }
+
+    .features-cont {
+        padding: 25px;
+    }
+    /* feature sec end */
+
+    /* gojek service start*/
+    .go-itmes-head {
+        padding-left: 110px;
+        font-size: 35px;
+    }
+
+    .go-itmes-head h2 span {
+        font-size: 32px;
+    }
+
+    .items {
+        padding: 3px 0px 3px 25px;
+    }
+
+    .icon-sec {
+        padding: 10px;
+    }
+
+    .icon {
+        height: 60px;
+        width: 60px;
+    }
+
+    .icon svg:not(:host).svg-inline--fa,
+    svg:not(:root).svg-inline--fa {
+        font-size: 28px;
+    }
+
+    .icon-sec h4 {
+        font-size: 13px;
+    }
+
+    .gojek-service img {
+        transform: translate(-50%, -48%);
+    }
+
+    /* gojek service end */
+    /* install gojek start */
+    .install-content {
+        padding: 42px 90px;
+    }
+
+    .install-col {
+        padding: 0px;
+    }
+
+    .settings {
+        padding: 3px 0;
+    }
+
+    .head-cont p {
+        font-size: 17px;
+        padding: 5px 0;
+    }
+
+    .img-div img {
+        height: -webkit-fill-available;
+    }
+
+    .set-con {
+        padding: 5px 25px 0px 5px;
+    }
+
+    .set-con h3 {
+        font-size: 18px;
+    }
+
+    .set-col-heading img {
+        width: 26px;
+    }
+
+    /* install gojek end */
+    /* Start Our Services */
+    .our-services-sec {
+        padding: 200px 0 180px 0;
+    }
+    .our-service-heading p {
+        margin-top: 10px;
+    }
+    .our-services-cards {
+        transform: translate(-50%, 40%);
+    }
+    .service-card {
+        width: 280px;
+        height: 220px;
+    }
+    .service-card p {
+        padding: 12px 10px 0 10px;
+    }
+    /* end Our Services */
+    /* footer start */
+    .footer-sec {
+        margin: 150px 0 0;
+    }
+    .footer {
+        padding: 50px 50px 30px 50px;
+    }
+    .footer-cont-header h2 {
+        margin: 30px 0 10px 0;
+    }
+    /* footer end */
+}
+
+@media only screen and (max-width: 1100px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 1024px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 996px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 768px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 570px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 360px) {
+    .contant {}
+}
+
+@media only screen and (max-width: 320px) {
+    .contant {}
+}

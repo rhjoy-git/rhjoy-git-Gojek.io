@@ -27,12 +27,13 @@
     justify-content: space-between;
     position: relative;
 }
-
+.header .toggle-btn{
+    display: none;
+}
 .header .toggle-btn svg:not(:root).svg-inline--fa {
     font-size: 25px;
     color: #fff;
     cursor: pointer;
-    display: none;
 }
 
 /* Logo start */
@@ -101,7 +102,53 @@
     color: inherit;
     padding: 0 10px;
 }
-
+/* dropdown menu start */
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0px;
+    background: #009b3441;
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-menu li{
+    padding: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+.dropdown-menu li a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 17px;
+}
+.dropdown-menu li a:active,
+.dropdown-menu li a:hover{
+    color: #fff;
+}
+.dropdown-menu #login{
+    width: 150px;
+    background: rgba(106, 255, 0, 0.888);
+    border-radius: 8px;
+    margin: 5px auto;
+}
+/* dropdown menu end */
 /* nav end  */
 /* contant start */
 .col {
@@ -578,6 +625,7 @@ svg:not(:root).svg-inline--fa {
     .features-cont {
         padding: 25px;
     }
+
     /* feature sec end */
 
     /* gojek service start*/
@@ -656,39 +704,97 @@ svg:not(:root).svg-inline--fa {
     .our-services-sec {
         padding: 200px 0 180px 0;
     }
+
     .our-service-heading p {
         margin-top: 10px;
     }
+
     .our-services-cards {
         transform: translate(-50%, 40%);
     }
+
     .service-card {
         width: 280px;
         height: 220px;
     }
+
     .service-card p {
         padding: 12px 10px 0 10px;
     }
+
     /* end Our Services */
     /* footer start */
     .footer-sec {
         margin: 150px 0 0;
     }
+
     .footer {
         padding: 50px 50px 30px 50px;
     }
+
     .footer-cont-header h2 {
         margin: 30px 0 10px 0;
     }
+
     /* footer end */
 }
 
 @media only screen and (max-width: 1100px) {
-    .contant {}
+    /* feature sec start */
+    .card {
+        padding: 5px 0px;
+    }
+    .features-cont img {
+        width: 450px;
+    }
+    /* feature sec end */
+    /* gojek service start */
+    .gojek-service img {
+        width: 235px;
+    }
+    /* gojek service end */
 }
 
 @media only screen and (max-width: 1024px) {
-    .contant {}
+    /* navbar sec start */
+    .nav-section{
+        display: none;
+    }
+    .header .toggle-btn{
+        display: block;
+    }
+    .dropdown-menu{
+        display: block;
+    }
+    /* navbar sec end */
+    .our-service-heading p {
+        padding: 5px 139px;
+    }
+    .service-card {
+        width: 250px;
+        height: 200px;
+    }
+    .service-card svg:not(:root).svg-inline--fa {
+        font-size: 60px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 80px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0px 30px;
+    }
+    .footer-cont {
+        width: auto;
+        padding: 10px;
+    }
+    .f-logo img{
+        width: 160px;
+        margin-left: 45px;
+    }
 }
 
 @media only screen and (max-width: 996px) {

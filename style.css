@@ -27,9 +27,11 @@
     justify-content: space-between;
     position: relative;
 }
-.header .toggle-btn{
+
+.header .toggle-btn {
     display: none;
 }
+
 .header .toggle-btn .fa-solid {
     font-size: 25px;
     color: #fff;
@@ -72,7 +74,7 @@
     color: #fff;
     border: 1px solid #fff;
     background: rgb(1, 117, 1);
-    padding:2px 4px;
+    padding: 2px 4px;
 }
 
 .navbar {
@@ -106,8 +108,9 @@
     color: inherit;
     padding: 0 10px;
 }
+
 /* dropdown menu start */
-.dropdown-menu{
+.dropdown-menu {
     display: none;
     position: absolute;
     right: 2rem;
@@ -120,14 +123,16 @@
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.dropdown-menu.open{
+
+.dropdown-menu.open {
     height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.dropdown-menu li{
+
+.dropdown-menu li {
     padding: 0.1rem;
     display: flex;
     align-items: center;
@@ -135,6 +140,7 @@
     list-style: none;
     text-align: center;
 }
+
 .dropdown-menu li a {
     color: #fff;
     text-align: center;
@@ -142,16 +148,19 @@
     padding: 5px;
     font-size: 17px;
 }
+
 .dropdown-menu li a:active,
-.dropdown-menu li a:hover{
+.dropdown-menu li a:hover {
     color: #fff;
 }
-.dropdown-menu #login{
+
+.dropdown-menu #login {
     width: 150px;
     background: rgba(106, 255, 0, 0.888);
     border-radius: 8px;
     margin: 5px auto;
 }
+
 /* dropdown menu end */
 /* nav end  */
 /* contant start */
@@ -228,42 +237,32 @@
     justify-content: center;
     align-items: center;
 }
-.bg-green .fas{
-    font-size: 40px;
-}
-.card svg:not(:host).svg-inline--fa,
-svg:not(:root).svg-inline--fa {
-    font-size: 40px;
-}
 
+.bg-green .fas {
+    font-size: 40px;
+}
 .card h3 {
     font-size: 25px;
     margin: 20px;
 }
-
 .card p {
     font-size: 20px;
     margin: 0;
 }
-
 .features-cont {
     padding: 50px;
 }
-
 .features-cont img {
     display: block;
     margin: auto;
 }
-
 .card:hover {
     transition: 0.5s;
     transform: translate(0, -50px);
 }
-
 .card:hover h3 {
     color: green;
 }
-
 .card:hover .bg-green {
     color: white;
     background: green;
@@ -561,7 +560,8 @@ svg:not(:root).svg-inline--fa {
     margin: 0;
 }
 
-.footer-social-link ul li div svg:not(:root).svg-inline--fa {
+.footer-social-link .fas,
+.footer-social-link .fa {
     font-size: 20px;
     padding-right: 5px;
     color: rgb(95, 206, 95);
@@ -658,8 +658,8 @@ svg:not(:root).svg-inline--fa {
         width: 60px;
     }
 
-    .icon svg:not(:host).svg-inline--fa,
-    svg:not(:root).svg-inline--fa {
+    .icon .fas,
+    .icon .fab {
         font-size: 28px;
     }
 
@@ -747,79 +747,270 @@ svg:not(:root).svg-inline--fa {
 }
 
 @media only screen and (max-width: 1100px) {
+
     /* feature sec start */
     .card {
         padding: 5px 0px;
     }
+
     .features-cont img {
         width: 450px;
     }
+
     /* feature sec end */
     /* gojek service start */
     .gojek-service img {
         width: 235px;
     }
+
     /* gojek service end */
 }
 
 @media only screen and (max-width: 1024px) {
+
     /* navbar sec start */
-    .nav-section{
+    .nav-section {
         display: none;
     }
-    .header .toggle-btn{
+
+    .header .toggle-btn {
         display: block;
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         display: block;
     }
+
     /* navbar sec end */
     .our-service-heading p {
         padding: 5px 139px;
     }
+
     .service-card {
         width: 250px;
         height: 200px;
     }
-    .service-card svg:not(:root).svg-inline--fa {
+
+    .service-card .fas,
+    .service-card .fa {
         font-size: 60px;
     }
+
     .footer {
         display: flex;
         justify-content: space-between;
         padding: 50px 80px;
     }
+
     .footer {
         display: flex;
         justify-content: space-between;
         padding: 50px 0px 30px;
     }
+
     .footer-cont {
         width: auto;
         padding: 10px;
     }
-    .f-logo img{
+
+    .f-logo img {
         width: 160px;
         margin-left: 45px;
     }
 }
 
 @media only screen and (max-width: 996px) {
-    .contant {}
+    /* header sec start */
+    .header {
+        padding: 15px 0px 10px 0;
+    }
+    .col {
+        width: 60%;
+    }
+    .col h2 {
+        font-size: 35px;
+    }
+    /* header sec end */
+    /* feature sec start */
+    .features-heading h2 {
+        font-size: 35px;
+    }
+    .features {
+        padding: 20px 0;
+    }
+    .features-card {
+        padding: 25px 0 25px;
+    }
+    .bg-green {
+        height: 25px;
+        width: 25px;
+        padding: 18px;
+    }
+    .bg-green .fas {
+        font-size: 25px;
+    }
+    .card h3 {
+        font-size: 20px;
+        margin: 14px 10px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+    .features-cont img {
+        width: 335px;
+    }
+    .features-cont {
+        padding: 15px;
+    }
+    .card:hover {
+        transition: 0.5s;
+        transform: translate(0, -20px);
+    }
+    /* feature sec end */
+    /* Gojek-service-sec start */
+    .Gojek-service-sec {
+        margin-bottom: 25px;
+    }
+    .gojek-service {
+        padding: 40px 0;
+    }
+    .gojek-service img {
+        width: 180px;
+    }
+    .go-itmes-head {
+        padding-left: 75px;
+    }
+    .go-itmes-head h2 {
+        font-size: 33px;
+    }
+    .go-itmes-head h2 span {
+        font-size: 28px;
+    }
+    .items {
+        padding: 3px 0px 3px 50px;
+    }
+    .icon-sec {
+        padding: 8px;
+    }
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+    .icon-sec h4 {
+        font-size: 12px;
+    }
+    .icon .fas, .icon .fab {
+        font-size: 23px;
+    }    
+    /* Gojek-service-sec end */
+    /* install gojek start */
+    .install-header h2 {
+        font-size: 35px;
+        margin: 0;
+    }
+    .install-content {
+        padding: 16px;
+    }
+    .head-cont p {
+        font-size: 15px;
+        padding: 5px 0;
+    }
+    .head-cont h3 {
+        font-size: 25px;
+        margin: 0;
+        padding: 2px 0;
+    }
+    .settings {
+        padding: 0px;
+    }
+    .set-col {
+        padding: 2px 0;
+    }
+    .set-col-heading img {
+        width: 24px;
+    }
+    .set-con {
+        padding: 5px 18px 0px 5px;
+    }
+    .set-con h3 {
+        font-size: 17px;
+    }
+    .set-con p {
+        margin: 0;
+        font-size: 15px;
+        color: #3b4b51;
+    }
+    .install-gojek{
+        padding: 6px 0;
+    }
+    /* install gojek end */
+    /* our service start */
+    .our-services-sec {
+        padding: 125px 0 110px 0;
+    }
+    .our-service-heading h2 {
+        font-size: 35px;
+    }
+    .our-service-heading p {
+        padding: 5px 65px;
+    }
+    .service-card {
+        width: 200px;
+        height: 135px;
+    }
+    /* our service end */
+    /* footer start */
+    .footer-sec {
+        margin: 95px 0 0;
+    }
+    .footer {
+        padding: 15px 0px;
+    }
+    .f-logo img {
+        width: 125px;
+        margin-left: 0;
+    }
+    .footer-cont-header h2 {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .footer-social-link ul li {
+        padding: 3px 0;
+    }
+    .footer-social-link ul li a {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    .footer-social-link ul li p {
+        font-size: 16px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .footer-social-link .fas,
+     .footer-social-link .fa {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+    .foot-bar {
+        padding-top: 13px;
+    }
+    .foot-bar a {
+        font-size: 18px;
+    }
+    .foot-bar strong {
+        font-size: 18px;
+    }    
+    /* footer end */
 }
 
 @media only screen and (max-width: 768px) {
-    .contant {}
 }
 
 @media only screen and (max-width: 570px) {
-    .contant {}
 }
 
 @media only screen and (max-width: 360px) {
-    .contant {}
 }
 
 @media only screen and (max-width: 320px) {
-    .contant {}
 }

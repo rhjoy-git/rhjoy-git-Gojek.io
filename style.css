@@ -13,7 +13,7 @@
 /* home page start */
 /* Background Img */
 .header-section {
-    background: url("image/Bannerinheader.png");
+    background: url("Image/Bannerinheader.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -279,7 +279,7 @@
 /* End Freatures */
 /* Start items */
 .Gojek-service-sec {
-    background: url("image/UseGojek.png");
+    background: url("Image/UseGojek.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

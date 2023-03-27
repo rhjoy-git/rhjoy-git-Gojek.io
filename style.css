@@ -1100,7 +1100,7 @@
     }
 
     .features-card {
-        padding: 10px 0;
+        padding: 35px 0;
         margin: 0;
     }
 
@@ -1110,7 +1110,7 @@
     }
 
     .card p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .card h3 {
@@ -1135,7 +1135,7 @@
     /* feature end */
     /* gojek-service start */
     .gojek-service img {
-        width: 145px;
+        width: 135px;
     }
 
     .go-itmes-head h2 {
@@ -1190,52 +1190,65 @@
     .our-services-sec {
         padding: 90px 0;
     }
+
     .our-service-heading h2 {
         font-size: 30px;
     }
+
     .our-service-heading p {
         padding: 5px 1px;
         margin-top: 0px;
     }
+
     .our-services-cards {
         transform: translate(-50%, 75%);
     }
+
     .service-card {
         width: 160px;
         height: 115px;
         margin: 0px 6px;
     }
+
     .service-card .fas,
     .service-card .fa {
         font-size: 42px;
     }
+
     .service-card p {
         padding: 12px 10px 0 10px;
         font-size: 16px;
     }
+
     /* our service sec end */
     /* footer start  */
     .footer-sec {
         margin: 80px 0 0;
     }
+
     .footer {
         padding: 15px 0px 10px;
     }
+
     .f-logo img {
         width: 115px;
         margin-left: 0;
     }
+
     .footer-cont {
         width: auto;
         padding: 5px;
     }
+
     .footer-cont-header h2 {
         margin: 16px 0 8px;
         font-size: 15px;
     }
+
     .foot-bar {
         padding: 7px;
     }
+
     /* footer end  */
 }
 
@@ -1243,85 +1256,111 @@
     .Container {
         padding: 0 15px;
     }
+
     .header {
         padding: 15px 0px 10px 0;
     }
+
     .contant {
         padding: 0;
     }
+
     .col h2 {
         font-size: 30px;
         word-spacing: 2px;
         padding: 0;
     }
+
     .col p {
         font-size: 16px;
         padding: 5px 0;
     }
+
     .features-card {
         padding: 10px 0;
         flex-direction: column;
         margin: auto;
     }
+
     .features-cont img {
         width: 280px;
     }
+
     .card {
         padding: 12px;
-        margin: 0 70px;
+        margin: 0 60px;
     }
+
+    .card p {
+        font-size: 15px;
+    }
+
     .go-itmes-head {
         padding-left: 5px;
     }
+
     .go-itmes-head h2 {
         font-size: 26px;
     }
+
     .go-itmes-head h2 span {
         font-size: 24px;
     }
+
     .go-itmes {
         padding: 20px 0;
     }
+
     .items {
         padding: 3px 0px 3px 0px;
     }
+
     .gojek-service img {
         width: 140px;
         transform: translate(-115%, -48%);
     }
+
     .install-content {
         padding: 10px 6px;
         flex-direction: column-reverse;
     }
+
     .install-col {
         padding: 0px;
         width: 100%;
     }
+
     .head-cont {
         text-align: center;
     }
+
     .our-services-sec {
         padding: 60px 0;
     }
+
     .our-services {
         position: relative;
         margin-top: 35px;
         padding: 0 10px;
     }
+
     .our-service-heading p {
         padding: 5px 1px;
         margin-top: 0px;
         font-size: 16px;
     }
+
     .our-services-cards {
         transform: translate(-50%, 105%);
         display: flex;
     }
+
     .service-card {
         width: 100px;
         height: 70px;
         margin: 0px 6px;
     }
+
     .service-card p {
         padding: 10px 10px 2px 10px;
         font-size: 10px;
@@ -1361,6 +1400,44 @@
     }
 }
 
-@media only screen and (max-width: 360px) {}
+@media only screen and (max-width: 360px) {
+    .dropdown-menu{
+        right: -7px;
+    }
+    .col h2 {
+        font-size: 29px;
+    }
 
-@media only screen and (max-width: 320px) {}
+    .card {
+        margin: 0px 55px;
+    }
+
+    .gojek-service img {
+        transform: translate(-105%, -48%);
+    }
+
+    .go-itmes-head {
+        padding-left: 15px;
+    }
+
+    .items {
+        padding: 3px 0px 3px 15px;
+    }
+
+    .go-itmes-head h2 {
+        font-size: 25px;
+    }
+
+    .go-itmes-head h2 span {
+        font-size: 20px;
+    }
+
+    .service-card {
+        width: 90px;
+        height: 65px;
+    }
+
+    .our-services-cards {
+        transform: translate(-50%, 130%);
+    }
+}

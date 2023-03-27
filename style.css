@@ -241,28 +241,35 @@
 .bg-green .fas {
     font-size: 40px;
 }
+
 .card h3 {
     font-size: 25px;
     margin: 20px;
 }
+
 .card p {
     font-size: 20px;
     margin: 0;
 }
+
 .features-cont {
     padding: 50px;
 }
+
 .features-cont img {
     display: block;
     margin: auto;
 }
+
 .card:hover {
     transition: 0.5s;
     transform: translate(0, -50px);
 }
+
 .card:hover h3 {
     color: green;
 }
+
 .card:hover .bg-green {
     color: white;
     background: green;
@@ -820,285 +827,364 @@
 }
 
 @media only screen and (max-width: 996px) {
+
     /* header sec start */
     .header {
         padding: 15px 0px 10px 0;
     }
+
     .col {
         width: 60%;
     }
+
     .col h2 {
         font-size: 35px;
     }
+
     /* header sec end */
     /* feature sec start */
     .features-heading h2 {
         font-size: 35px;
     }
+
     .features {
         padding: 20px 0;
     }
+
     .features-card {
         padding: 25px 0 25px;
     }
+
     .bg-green {
         height: 25px;
         width: 25px;
         padding: 18px;
     }
+
     .bg-green .fas {
         font-size: 25px;
     }
+
     .card h3 {
         font-size: 20px;
         margin: 14px 10px;
     }
+
     .card p {
         font-size: 15px;
     }
+
     .features-cont img {
         width: 335px;
     }
+
     .features-cont {
         padding: 15px;
     }
+
     .card:hover {
         transition: 0.5s;
         transform: translate(0, -20px);
     }
+
     /* feature sec end */
     /* Gojek-service-sec start */
     .Gojek-service-sec {
         margin-bottom: 25px;
     }
+
     .gojek-service {
         padding: 40px 0;
     }
+
     .gojek-service img {
         width: 180px;
     }
+
     .go-itmes-head {
         padding-left: 75px;
     }
+
     .go-itmes-head h2 {
         font-size: 33px;
     }
+
     .go-itmes-head h2 span {
         font-size: 28px;
     }
+
     .items {
         padding: 3px 0px 3px 50px;
     }
+
     .icon-sec {
         padding: 8px;
     }
+
     .icon {
         height: 50px;
         width: 50px;
     }
+
     .icon-sec h4 {
         font-size: 12px;
     }
-    .icon .fas, .icon .fab {
+
+    .icon .fas,
+    .icon .fab {
         font-size: 23px;
-    }    
+    }
+
     /* Gojek-service-sec end */
     /* install gojek start */
     .install-header h2 {
         font-size: 35px;
         margin: 0;
     }
+
     .install-content {
         padding: 16px;
     }
+
     .head-cont p {
         font-size: 15px;
         padding: 5px 0;
     }
+
     .head-cont h3 {
         font-size: 25px;
         margin: 0;
         padding: 2px 0;
     }
+
     .settings {
         padding: 0px;
     }
+
     .set-col {
         padding: 2px 0;
     }
+
     .set-col-heading img {
         width: 24px;
     }
+
     .set-con {
         padding: 5px 18px 0px 5px;
     }
+
     .set-con h3 {
         font-size: 17px;
     }
+
     .set-con p {
         margin: 0;
         font-size: 15px;
         color: #3b4b51;
     }
-    .install-gojek{
+
+    .install-gojek {
         padding: 6px 0;
     }
+
     /* install gojek end */
     /* our service start */
     .our-services-sec {
         padding: 125px 0 110px 0;
     }
+
     .our-service-heading h2 {
         font-size: 35px;
     }
+
     .our-service-heading p {
         padding: 5px 65px;
     }
+
     .service-card {
         width: 200px;
         height: 135px;
     }
+
     /* our service end */
     /* footer start */
     .footer-sec {
         margin: 95px 0 0;
     }
+
     .footer {
         padding: 15px 0px;
     }
+
     .f-logo img {
         width: 125px;
         margin-left: 0;
     }
+
     .footer-cont-header h2 {
         margin: 10px 0;
         font-size: 18px;
     }
+
     .footer-social-link ul li {
         padding: 3px 0;
     }
+
     .footer-social-link ul li a {
         font-size: 16px;
         padding: 0 5px;
     }
+
     .footer-social-link ul li p {
         font-size: 16px;
         padding: 0 5px;
         margin: 0;
     }
+
     .footer-social-link .fas,
-     .footer-social-link .fa {
+    .footer-social-link .fa {
         font-size: 16px;
         padding-right: 0px;
     }
+
     .foot-bar {
         padding-top: 13px;
     }
+
     .foot-bar a {
         font-size: 18px;
     }
+
     .foot-bar strong {
         font-size: 18px;
-    }    
+    }
+
     /* footer end */
 }
 
 @media only screen and (max-width: 768px) {
+
     /* header start */
     .logo img {
         height: 55px;
     }
+
     .contant {
         padding: 0;
     }
+
     .col {
         width: auto;
     }
+
     .col p {
         font-size: 16px;
         padding: 5px 0;
     }
+
     .col img {
         padding: 10px 15px;
         height: 55px;
     }
+
     .col h2 {
         font-size: 30px;
         padding-right: 100px;
         word-spacing: 2px;
     }
+
     /* header end */
     /* feature start  */
     .features-heading h2 {
         font-size: 30px;
     }
+
     .features-card {
         padding: 10px 0;
         margin: 0;
     }
+
     .card {
         padding: 5px 0px;
         margin: 0 20px;
     }
+
     .card p {
         font-size: 13px;
     }
+
     .card h3 {
         font-size: 18px;
         margin: 10px 0px 4px;
     }
+
     .bg-green {
         height: 20px;
         width: 20px;
         padding: 13px;
     }
+
     .bg-green .fas {
         font-size: 20px;
     }
+
     .card:hover {
         transform: translate(0, -10px);
     }
+
     /* feature end */
     /* gojek-service start */
     .gojek-service img {
         width: 145px;
     }
+
     .go-itmes-head h2 {
         font-size: 28px;
     }
+
     .go-itmes-head h2 span {
         font-size: 25px;
     }
+
     .icon {
         height: 40px;
         width: 40px;
     }
-    .icon .fas, .icon .fab {
+
+    .icon .fas,
+    .icon .fab {
         font-size: 19px;
     }
+
     .icon-sec {
         padding: 3px;
     }
+
     .gojek-service {
         padding: 40px 0;
     }
+
     /* gojek-service end */
     /* install gojek start */
     .install-content {
         padding: 16px 8px;
     }
+
     .head-cont h3 {
         font-size: 22px;
         margin: 0;
         padding: 2px 0;
     }
+
     .set-con h3 {
         font-size: 16px;
     }
+
     .set-col-heading img {
         width: 17px;
         padding: 2px 2px 2px 0;
     }
+
     /* install gojek end */
     /* our service sec start  */
     .our-services-sec {
@@ -1119,7 +1205,8 @@
         height: 115px;
         margin: 0px 6px;
     }
-    .service-card .fas, .service-card .fa {
+    .service-card .fas,
+    .service-card .fa {
         font-size: 42px;
     }
     .service-card p {
@@ -1153,10 +1240,127 @@
 }
 
 @media only screen and (max-width: 570px) {
+    .Container {
+        padding: 0 15px;
+    }
+    .header {
+        padding: 15px 0px 10px 0;
+    }
+    .contant {
+        padding: 0;
+    }
+    .col h2 {
+        font-size: 30px;
+        word-spacing: 2px;
+        padding: 0;
+    }
+    .col p {
+        font-size: 16px;
+        padding: 5px 0;
+    }
+    .features-card {
+        padding: 10px 0;
+        flex-direction: column;
+        margin: auto;
+    }
+    .features-cont img {
+        width: 280px;
+    }
+    .card {
+        padding: 12px;
+        margin: 0 70px;
+    }
+    .go-itmes-head {
+        padding-left: 5px;
+    }
+    .go-itmes-head h2 {
+        font-size: 26px;
+    }
+    .go-itmes-head h2 span {
+        font-size: 24px;
+    }
+    .go-itmes {
+        padding: 20px 0;
+    }
+    .items {
+        padding: 3px 0px 3px 0px;
+    }
+    .gojek-service img {
+        width: 140px;
+        transform: translate(-115%, -48%);
+    }
+    .install-content {
+        padding: 10px 6px;
+        flex-direction: column-reverse;
+    }
+    .install-col {
+        padding: 0px;
+        width: 100%;
+    }
+    .head-cont {
+        text-align: center;
+    }
+    .our-services-sec {
+        padding: 60px 0;
+    }
+    .our-services {
+        position: relative;
+        margin-top: 35px;
+        padding: 0 10px;
+    }
+    .our-service-heading p {
+        padding: 5px 1px;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+    .our-services-cards {
+        transform: translate(-50%, 105%);
+        display: flex;
+    }
+    .service-card {
+        width: 100px;
+        height: 70px;
+        margin: 0px 6px;
+    }
+    .service-card p {
+        padding: 10px 10px 2px 10px;
+        font-size: 10px;
+    }
+
+    .service-card .fas,
+    .service-card .fa {
+        font-size: 25px;
+    }
+
+    .footer-sec {
+        margin: 40px 0 0;
+    }
+
+    .footer {
+        padding: 15px 0px 10px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-cont {
+        padding: 0;
+        text-align: center;
+    }
+
+    .f-logo img {
+        width: 160px;
+        margin-left: auto;
+    }
+
+    .footer-social-link ul li div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
-@media only screen and (max-width: 360px) {
-}
+@media only screen and (max-width: 360px) {}
 
-@media only screen and (max-width: 320px) {
-}
+@media only screen and (max-width: 320px) {}
